@@ -1,0 +1,9 @@
+Django==6.1.2
+django-allauth[headless-spec,socialaccount]==65.21.0
+djangorestframework==3.18.3
+psycopg[binary]==3.3.6
+django-environ==0.14.0
+argon2-cffi==25.1.0
+whitenoise==6.12.0
+redis==8.1.0
+pyarrow==26.0.1
