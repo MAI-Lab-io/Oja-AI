@@ -1,0 +1,46 @@
+node_modules
+
+# Secrets and private configuration
+.env
+.env.*
+!.env.example
+!.env.django.example
+*.pem
+*.key
+
+# Local database, uploaded artifacts and backups
+/.local/
+/backups/
+/uploads/
+/media/
+*.dump
+*.sqlite
+*.sqlite3
+
+# Python environments and generated files
+/venv/
+/.venv/
+/env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+/staticfiles/
+
+# Frontend dependencies and generated files
+node_modules/
+/build/
+/dist/
+.vite/
+*.tsbuildinfo
+
+# Logs, editor files and generated demo data
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+/customer_churn_demo/
