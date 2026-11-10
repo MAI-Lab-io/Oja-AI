@@ -1,0 +1,40 @@
+{
+  "splits": {
+    "status": "not_provided",
+    "method": "user_defined",
+    "column": null,
+    "values": null,
+    "ratios": {
+      "train": 80,
+      "test": 20
+    }
+  },
+  "features": [
+    {
+      "name": "customer_id",
+      "dtype": "string",
+      "description": "Customer identifier"
+    },
+    {
+      "name": "age",
+      "dtype": "integer"
+    },
+    {
+      "name": "monthly_charges",
+      "dtype": "float"
+    },
+    {
+      "name": "tenure",
+      "dtype": "integer"
+    },
+    {
+      "name": "contract_type",
+      "dtype": "string"
+    },
+    {
+      "name": "churn",
+      "dtype": "string",
+      "description": "Prediction target. Classes: yes, no."
+    }
+  ]
+}

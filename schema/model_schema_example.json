@@ -1,0 +1,20 @@
+{
+  "license": "Apache-2.0",
+  "task": "tabular-classification",
+  "languages": [],
+  "tags": [
+    "tabular",
+    "customer-churn",
+    "example"
+  ],
+  "intended_use": "Demonstration of customer churn classification on synthetic tabular data.",
+  "limitations": "Example metadata only. Replace this description with the model's actual limitations, supported populations, and evaluation findings.",
+  "framework": "pytorch",
+  "architecture": "Tabular multilayer perceptron; replace with the actual model architecture.",
+  "training_description": "Illustrative example only: describe your actual training dataset release, preprocessing, feature order, hyperparameters, and validation procedure here.",
+  "methods": "Document how categorical contract_type values and numeric fields are transformed. Identify which columns are model inputs and how churn outputs are interpreted.",
+  "source_url": "",
+  "code_url": "",
+  "code_revision": "",
+  "citation": ""
+}
