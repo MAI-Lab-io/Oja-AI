@@ -1,0 +1,18 @@
+{% extends "account/email/base_message.txt" %}
+{% block content %}{% autoescape off %}An account already exists for {{ email }}.
+
+You or someone else tried to create another account with this email address. No additional account was created and no new sign-in provider was linked by this attempt.
+
+To add Google or GitHub to your existing account:
+1. Sign in using your existing email and password, or an already linked provider:
+{{ login_url }}
+2. Open Linked sign-in accounts:
+{{ connections_url }}
+3. Choose Link Google or Link GitHub and complete the provider's sign-in process.
+
+After linking, either sign-in method opens the same account and your existing uploads.
+
+If you have forgotten your password, request a reset here:
+{{ password_reset_url }}
+
+If you did not request this, you can ignore this email. Your account has not been changed by this signup attempt.{% endautoescape %}{% endblock content %}
