@@ -1,0 +1,110 @@
+.auth-entry-page {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #edf2ff, #e3eaff);
+}
+
+.auth-entry-card {
+  width: 100%;
+  max-width: 36.75rem;
+  padding: 2rem;
+  border: 1px solid #e1e1e5;
+  border-radius: 1.25rem;
+  background: white;
+  text-align: center;
+}
+
+.auth-entry-logo {
+  display: grid;
+  place-items: center;
+  width: 4.625rem;
+  height: 4.625rem;
+  margin-inline: auto;
+  border-radius: 50%;
+  color: #5537ff;
+  background: #e1e7ff;
+}
+
+.auth-entry-logo svg { width: 2.5rem; height: 2.5rem; }
+.auth-entry-card h1 { margin: 2rem 0 .5rem; font-size: 2rem; font-weight: 500; line-height: 1.3; }
+.auth-entry-card > p { margin: 0 0 2rem; color: #727681; font-size: 1.25rem; line-height: 1.5; }
+.auth-entry-actions { display: grid; gap: 1.25rem; }
+.auth-entry-actions [data-slot="button"] { min-height: 3rem; border-radius: .625rem; font-size: 1rem; }
+.auth-entry-actions .auth-entry-signin { color: white; background: #5133ff; }
+.auth-entry-actions .auth-entry-signin:hover { background: #4529e6; }
+.auth-entry-card .auth-entry-back { margin-top: 1.25rem; min-height: 2.5rem; gap: .5rem; font-size: 1rem; }
+
+.auth-account-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  transform: none;
+  display: block;
+  width: calc(100% - 2rem);
+  max-width: 32.75rem;
+  max-height: calc(100svh - 2rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0;
+  gap: 0;
+  border: 0;
+  border-radius: 1rem;
+  background: white;
+  color: #27272b;
+  box-shadow: 0 18px 55px #0003;
+}
+
+.auth-account-main { padding: 2.75rem 3rem 2rem; }
+.auth-account-heading { text-align: center; gap: .5rem; margin-bottom: 2.5rem; }
+.auth-account-heading [data-slot="dialog-title"] { font-size: 1.45rem; font-weight: 700; line-height: 1.4; }
+.auth-account-heading [data-slot="dialog-description"] { font-size: 1rem; line-height: 1.5; color: #77777f; }
+.auth-account-dialog > button:last-child { top: .625rem; right: .625rem; width: 2.25rem; height: 2.25rem; display: grid; place-items: center; border-radius: .5rem; color: #707078; opacity: 1; }
+.auth-account-dialog > button:last-child:hover { background: #f4f4f5; }
+.auth-account-dialog > button:last-child svg { width: 1.25rem; height: 1.25rem; }
+.auth-social-buttons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .625rem; margin: 0; }
+.auth-account-dialog .auth-social-buttons [data-slot="button"] { min-height: 2.625rem; height: auto; margin: 0; padding: .5rem .75rem; gap: .75rem; background: white; color: #55555b; border: 1px solid #e1e1e5; border-radius: .625rem; font-size: 1rem; font-weight: 600; box-shadow: 0 1px 2px #0002; }
+.auth-social-buttons > p { grid-column: 1 / -1; margin: .25rem 0 0; font-size: .8rem; line-height: 1.4; color: #72727a; }
+.auth-account-dialog .auth-divider { margin: 2rem 0; color: #7e7e87; font-size: 1rem; }
+.auth-account-dialog .auth-divider::before, .auth-account-dialog .auth-divider::after { border-color: #e8e8ec; }
+.auth-account-form { display: grid; gap: 1.75rem; }
+.auth-account-form > div, .auth-name-fields > div { min-width: 0; }
+.auth-account-form [data-slot="label"] { display: flex; justify-content: space-between; line-height: 1.4; font-size: 1rem; font-weight: 500; }
+.auth-account-form [data-slot="label"] > span { color: #7c7c84; font-size: .8rem; font-weight: 500; }
+.auth-account-form input { width: 100%; height: 2.625rem; min-height: 2.625rem; padding: .625rem 1rem; background: white; border: 1px solid #d6d6dc; border-radius: .625rem; font-size: 1rem; line-height: 1.4; }
+.auth-account-form [data-slot="label"] + input, .auth-account-form [data-slot="label"] + .auth-password-field { margin-top: .625rem; }
+.auth-account-form input::placeholder { color: #8a8a93; }
+.auth-name-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.25rem; }
+.auth-password-field { position: relative; }
+.auth-password-field input { padding-right: 3rem; }
+.auth-password-field button { position: absolute; top: 50%; right: .75rem; transform: translateY(-50%); display: grid; place-items: center; width: 1.75rem; height: 1.75rem; color: #93939a; }
+.auth-password-field svg { width: 1.1rem; height: 1.1rem; }
+.auth-field-hint { margin-top: .5rem; font-size: .8rem; color: #777780; }
+.auth-text-action { margin-top: .5rem; color: #555562; font-size: .875rem; text-decoration: underline; text-underline-offset: 3px; }
+.auth-account-dialog .auth-continue { min-height: 2.75rem; height: auto; margin-top: .5rem; border: 1px solid #5133ff; border-radius: .625rem; background: #5133ff; color: white; font-size: 1rem; font-weight: 600; gap: .625rem; box-shadow: 0 2px 3px #0002; }
+.auth-account-dialog .auth-continue:hover { background: #4529e6; border-color: #4529e6; }
+.auth-account-dialog .auth-continue svg { width: .875rem; height: .875rem; }
+.auth-account-error { padding: .75rem; border-radius: .5rem; background: #fff1f2; color: #a2142f; font-size: .875rem; line-height: 1.5; }
+.auth-link-context { margin-bottom: 1.25rem; font-size: .875rem; line-height: 1.5; }
+.auth-link-help { margin-top: 1.5rem; font-size: .8rem; line-height: 1.5; color: #707079; }
+.auth-link-help summary { cursor: pointer; }
+.auth-link-help p { margin-top: .5rem; }
+.auth-link-help a { text-decoration: underline; }
+.auth-account-footer { border-top: 1px solid #e7e7eb; padding: 1.375rem 1.5rem; background: #f7f7f8; text-align: center; color: #77777f; font-size: 1rem; line-height: 1.5; }
+.auth-account-footer button { margin-left: .25rem; font-weight: 600; color: #36363e; }
+.auth-account-footer button:hover { text-decoration: underline; }
+.auth-account-dialog button:focus-visible, .auth-entry-page a:focus-visible { outline: 2px solid #6857e8; outline-offset: 3px; }
+
+@media (max-width: 35rem) {
+  .auth-entry-card { padding: 1.75rem 1.25rem; }
+  .auth-entry-card > p { font-size: 1.1rem; }
+  .auth-account-main { padding: 2.75rem 1.5rem 1.5rem; }
+  .auth-account-heading { margin-bottom: 2rem; }
+}
+
+@media (max-width: 23rem) {
+  .auth-name-fields { grid-template-columns: minmax(0, 1fr); }
+}
